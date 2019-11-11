@@ -1,5 +1,5 @@
 import React from 'react'
-import Note from './Note'
+import Note from './components/Note'
 
 const App = ({ notes }) => {
   const rows = () => notes.map(note =>
@@ -19,4 +19,4 @@ const App = ({ notes }) => {
   )
 }
 
-export default App
+export default App 
