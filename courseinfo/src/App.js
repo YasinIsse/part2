@@ -48,12 +48,10 @@ const courses = [
   }
 ]
 
-    return (
-      <div>
-        <Course courses={courses} />
-      </div>
-    )
+const coursemap = () => courses.map(course => <Course key= {course.id} courses={course} />)
 
-    }
-  export default App 
+return ( <div> {coursemap()} </div> )
+}
+
+export default App 
 

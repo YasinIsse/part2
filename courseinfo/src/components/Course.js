@@ -7,17 +7,9 @@ import Total from './Total'
 const Course = ({courses}) => {
         return (
             <div>
-                {
-                courses.map( (value) => 
-                         { 
-                             return (
-                                <Header key= {value.id} course={value.name}/>,
-                                <Content  key= {value.id} parts= {value.parts}/>,
-                                <Total key= {value.id} parts= {value.parts}/> 
-                                )
-                         }
-                         )
-                        }
+            <Header  course={courses.name}/>
+            <Content parts= {courses.parts}/>
+            <Total parts= {courses.parts}/> 
             </div>
         )
 }
